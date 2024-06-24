@@ -1,0 +1,17 @@
+{
+  "name": "my-piano-app",
+  "version": "1.0.0",
+  "main": "piano.html",
+  "scripts": {
+    "start": "nw ."
+  },
+  "window": {
+    "width": 1920,
+    "height": 1080,
+    "title": "Piano App"
+    
+  },
+  "dependencies": {
+    "nw": "^0.88.0-5"
+  }
+}

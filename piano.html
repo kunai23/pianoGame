@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Game</title>
+    <link rel="stylesheet" href="piano.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icone" type="image/png" sizes="192x192" href="icone/grand-piano.png">
+    <style>
+        body {
+            background-image: url('background image/japan.webp');
+            
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="game-container">
+            <div class="score">Score: 0</div>
+            
+            <div class="piano">
+                <div class="key" data-key="65">A</div>
+                <div class="key" data-key="90">Z</div>
+                <div class="key" data-key="69">E</div>
+                <div class="key" data-key="82">R</div>
+            </div>
+            <div class="falling-notes"></div>
+            <div class="game-over hidden">Game Over<br>Press Space to Restart</div>
+        </div>
+
+        <div class="rules">
+            <h2>Rules</h2>
+            <p>Press the corresponding keys (A, Z, E, R) to play the notes falling from the top.</p>
+            <p>Avoid missing the notes or pressing more than three keys simultaneously.</p>
+            <p>Score points for each correct note. Game over if you miss too many notes.</p>
+            <p>Nb:you can hold only 3 keys at the same time, if you hold more than 3 keys you loose.</p>
+        </div>
+
+        <!-- Conteneur pour le meilleur score en dehors du cadre principal -->
+        <div class="sidebar">
+            <div class="best-score">Best Score: 0</div>
+        </div>
+        <img src="background image/leaderboardvf.png" alt="Image Description" style="position: absolute; top: 10px; right: 1050px; width: 850px; height: 95vh;">
+
+    </div>
+    <audio id="sound-do" src="sounds/do.mp3"></audio>
+    <audio id="sound-re" src="sounds/re.mp3"></audio>
+    <audio id="sound-mi" src="sounds/mi.mp3"></audio>
+    <audio id="sound-fa" src="sounds/fa.mp3"></audio>
+    <script src="piano.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "Piano Game",
+  "short_name": "Piano",
+  "icone": [
+    {
+      "src": "icone/grand-piano.png",
+      "sizes": "192x192",
+      "type": "image/png"
+      
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "display": "standalone"
+}
